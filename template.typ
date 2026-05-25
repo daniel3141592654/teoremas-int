@@ -5,7 +5,7 @@
   // Set the document's basic properties.
   set document(author: authors, title: title)
   set page(paper: "a5", numbering: "1", number-align: center)
-  set text(font: "TeX Gyre Pagella", lang: "es")
+  set text(font: "Tex Gyre Termes", lang: "es")
   set heading(numbering: "1.1.")
 
   // Set run-in subheadings, starting at level 3.
@@ -18,7 +18,7 @@
     }
   }
 
-  show math.equation: set text(font: "TeX Gyre Pagella Math")
+  show math.equation: set text(font: "Erewhon Math")
 
   set math.equation(numbering: "1.")
 

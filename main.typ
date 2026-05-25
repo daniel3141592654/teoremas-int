@@ -226,18 +226,19 @@ los parámetros definidos en $0 <= u <= 3$ y $0<= v <= 4$.
     Obtenemos con esto el producto de $bf(F)(u,v)$ y de
     el producto vectorial de los vectores normales.
 
-    $ 
-    bf(F) (u,v) dot ( bf(r)_u times bf(r)_v ) =
-    vec(u-v^2,u,0) dot vec(-1-2v,-1,2v) \
-    = -(u-v^2)(2v+1) - u \
-    = (v^2 - u)2v + (v^2 - u) - u \ ...
-    $
 ], 
   stroke: black, inset: 8pt)
 
 
 #box(
   [
+    $ 
+    bf(F) (u,v) dot ( bf(r)_u times bf(r)_v ) =
+    vec(u-v^2,u,0) dot vec(-1-2v,-1,2v) \
+    = -(u-v^2)(2v+1) - u \
+    = (v^2 - u)2v + (v^2 - u) - u \ ...
+    $
+
     $ = 2 v^3 - 2 u v + v^2 - 2 u $
 
     Al final, esto es lo que se integra con los límites de los
@@ -246,7 +247,7 @@ los parámetros definidos en $0 <= u <= 3$ y $0<= v <= 4$.
     $ limits(integral)_0^4 limits(integral)_0^3 
     2 v^3 - 2 u v + v^2 - 2 u dif u dif v $
 
-    Genuinamente usando una calculadora simbólica, tenemos que
+    Por conveniencia, usando una calculadora simbólica, tenemos que
     el resultado final es de:
 
     $ 
@@ -273,6 +274,12 @@ limits(integral.double)_(S)
 bf(F) dot dif  bf(S) =
 limits(integral.triple)_(E)
 nabla dot bf(F) dif V
+$
+
+= Teorema (...)
+
+$
+limits(integral.surf)_(C)
 $
 
 // #lorem(60)
