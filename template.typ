@@ -5,7 +5,7 @@
   // Set the document's basic properties.
   set document(author: authors, title: title)
   set page(paper: "a5", numbering: "1", number-align: center)
-  set text(font: "Tex Gyre Termes", lang: "es")
+  set text(font: "Tex Gyre Pagella", lang: "es")
   set heading(numbering: "1.1.")
 
   // Set run-in subheadings, starting at level 3.
