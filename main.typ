@@ -13,9 +13,9 @@
 
 // Here I put some important equations I used...
 
-#let hatI = $hat(bold(i))$
-#let hatJ = $hat(bold(j))$
-#let hatK = $hat(bold(k))$
+#let hatI = $hat(dotless.i)$
+#let hatJ = $hat(dotless.j)$
+#let hatK = $hat(k)$
 
 
 #let ijk(a, b, c) = $#a space hatI #b space hatJ #c space hatK$
@@ -311,6 +311,12 @@ Vemos que en la @stokes el asunto es la necesidad de
 integrar el flujo normal a una curva frontera de
 una superficie suave $S$ cuya frontera
 $C = partial S$.
+
+El teorema de Stokes es útil para encontrar el la
+expresión en forma diferencial para las ecuaciones
+de Maxwell, dado que describen la tendencia rotacional
+del campo de inducción magnética.
+
 
 // #lorem(60)
 

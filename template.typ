@@ -5,7 +5,7 @@
   // Set the document's basic properties.
   set document(author: authors, title: title)
   set page(paper: "a5", numbering: "1", number-align: center)
-  set text(font: "Tex Gyre Pagella", lang: "es")
+  set text(font: "Garamond Libre", lang: "es")
   set heading(numbering: "1.1.")
 
   // Set run-in subheadings, starting at level 3.
@@ -18,14 +18,15 @@
     }
   }
 
-  show math.equation: set text(font: "Erewhon Math")
+  show math.equation: set text(font: "Garamond-Math")
 
-  set math.equation(numbering: "1.")
+  set math.equation(numbering: "(1)")
 
 
   // Title row.
   align(center)[
-    #block(text(weight: 700, 1.75em, title))
+    #v(1in)
+    #block(text(weight: 400, spacing: 8pt, tracking: -1pt, 2.00em, title))
     #v(1em, weak: true)
     #date
   ]
@@ -44,7 +45,7 @@
 
   // Main body.
   set par(justify: true)
-  set text(hyphenate: false)
+  set text(hyphenate: true)
 
 
   body
